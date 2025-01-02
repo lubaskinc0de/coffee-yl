@@ -10,50 +10,65 @@
     <height>400</height>
    </rect>
   </property>
-  <widget class="QTableWidget" name="tableWidget">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>580</width>
-     <height>350</height>
-    </rect>
-   </property>
-   <column>
-    <property name="text">
-     <string>ИД</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Название</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Степень обжарки</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Молотый или в зернах</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Описание вкуса</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Цена</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Объем упаковки</string>
-    </property>
-   </column>
+  <property name="windowTitle">
+   <string>Кофе Менеджер</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Название</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Степень обжарки</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Тип</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Описание</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Цена</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Объем</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="addButton">
+      <property name="text">
+       <string>Добавить кофе</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="editButton">
+      <property name="text">
+       <string>Редактировать кофе</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
 </ui>
